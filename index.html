@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form name="signup" action="https://meusite.com.br/signup"> Ação não permitida se você não for o dono do site. Existe um esquema de segurança que impede de fazer isso -->
+    <!-- <form name="signup" target="_self" method="get" action="#" autocomplete="on" onsubmit="alert('Enviei o formuário')">name é o parâmetro que sera enviado no endereço da página ou no corpo da requisição -->
+    <form method="get">
+        <!-- target é aonde a página vai abrir -->
+        <!-- method é o tipo de requisição que o formulário vai fazer -->
+        <!-- action é o parâmetro que indica o que o form deve fazer -->
+        <!-- autocomplete é o parametro que informa se os campos oferecerão sugestões que autocompletam a informação passada -->
+        <!-- Quando o botão com "submit" for clicado, o onsubmit vai definir o que aquele botão irá -->
+        <!-- Nome: <input type="text" name="name"><br/>
+        Idade: <input type="number" name="age"><br/>
+        Senha: <input type="password" name="password"><br/>
+        <button type="submit">Enviar</button> -->
+        <!-- step em type="range" define que quanto em quanto o mecanismo vai ser configurado -->
+        <!-- <input type="color"><br>
+        <input type="email"><br>
+        <input type="range" min="0" max="100" value="50" step="10"><br> 
+        <input type="url"><br>
+        <input type="date"><br>
+        <input type="week"><br>
+        <input type="checkbox"><br>
+        <input type="radio"><br>
+        <input type="button" value="enviar"><br/> -->
+        <!-- A ideia do valor do name(optional) com [] é para repassar a informação para o servidor de que esses valores de value(queijo, calabresa, frango e cebola) são uma lista -->
+        <!-- <input type="checkbox" name="opcional[]" value="queijo"> + queijo <br>
+        <input type="checkbox" name="opcional[]" value="queijo"> + calabresa <br>
+        <input type="checkbox" name="opcional[]" value="queijo"> + frango <br>
+        <input type="checkbox" name="opcional[]" value="queijo"> + cebola <br> -->
+        <!-- A ideia do valor do name aqui é que o seu valor nas duas tags seja o mesmo, para que a escolha seja apenas uma. -->
+        <!-- <input type="radio" name="borda" value="yes">
+        <input type="radio" name="borda" value="no"> -->
+        <!-- <label>Nome *: </label><input type="text" name="name"><br>
+        <label>Idade *: </label><input type="number" name="age"><br> -->
+        <!-- O campo disabled significa que o campo  -->
+        <!-- <label>Password *: </label><input disabled type="password" name="password"><br>  -->
+        <!-- Um botão do tipo button é aquele que só funciona se voê colocar um javascript nele -->
+        <!-- <button type="button" onclick="alert('Cliquei aqui')">Enviar Pedido</button> -->
+        <!-- Limpa todos os campos -->
+        <!-- <button type="reset">Limpar</button> -->
+        <!-- O selectbox serve pra disponibilizar algumas opções pré-determinadas, para evitar a fuga do escopo de respostas adequadas -->
+        <select name="role" multuple> <!-- multiple significa que da pra selecionar varias opções -->
+            <!-- cada value é um valor é enviado para o back-end -->
+            <option value="gerente" selected>Gerente</option> <!--  quando tiver um selected, é esse valor que vai ser apresentado logo quando a página for carregada -->
+            <option value="diretor">Diretor</option>
+            <option value="presidente">Presidente</option>
+        </select>
+        <!-- o textarea é uma tag que pode submeter ao back-end uma mensagem -->
+        <textarea name="message"></textarea>
+        <textarea rows="10" cols="10" name="message"></textarea><!-- Rows define quantidade de linhas que o message vai ter, assim como Cols vai representar a quantidade de colunas  -->
+        
+
+    </form>
+</body>
+</html>
